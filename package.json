@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest run"
+    "test": "vitest run",
+    "commit": "git add -A; timestamp=$(date \"+%c\") && git commit -m \"TCR @ $timestamp\";",
+    "revert": "git reset --hard",
+    "tcr": "npm t && npm run commit || npm run revert"
+
   },
   "keywords": [],
   "author": "",
