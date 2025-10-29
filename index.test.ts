@@ -6,4 +6,9 @@ describe("FizzBuzz single number", () => {
     const result = single(1);
     expect(result).toBe("1");
   });
+
+  it('returns "2" for 2', () => {
+    const result = single(2);
+    expect(result).toBe("2");
+  });
 });

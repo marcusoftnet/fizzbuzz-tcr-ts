@@ -1,3 +1,3 @@
 export const single = (n: number): string => {
-  return "1";
+  return n.toString();
 };
