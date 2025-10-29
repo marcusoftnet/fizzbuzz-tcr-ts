@@ -13,5 +13,4 @@ describe("FizzBuzz single number", () => {
   it('returns "Fizz" for 6', () => assertSingle(6, "Fizz"));
   it('returns "Buzz" for 10', () => assertSingle(10, "Buzz"));
   it('returns "FizzBuzz" for 15', () => assertSingle(15, "FizzBuzz"));
-
 });
