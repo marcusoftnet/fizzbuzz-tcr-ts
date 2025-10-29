@@ -3,8 +3,7 @@ import { single } from ".";
 
 describe("FizzBuzz single number", () => {
   const assertSingle = (input: number, expected: string) => {
-    const result = single(input);
-    expect(result).toBe(expected);
+    expect(single(input)).toBe(expected);
   };
 
   it('returns "1" for 1', () => assertSingle(1, "1"));
