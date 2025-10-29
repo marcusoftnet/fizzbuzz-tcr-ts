@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { single } from ".";
+import { single, sequence } from ".";
 
 describe("FizzBuzz single number", () => {
   const assertSingle = (input: number, expected: string) => {
@@ -14,3 +14,11 @@ describe("FizzBuzz single number", () => {
   it('returns "Buzz" for 10', () => assertSingle(10, "Buzz"));
   it('returns "FizzBuzz" for 15', () => assertSingle(15, "FizzBuzz"));
 });
+
+describe("FizzBuzz string", () => {
+  it('returns "1" for 1 to 1', () => {
+    const result = sequence(1, 1);
+    expect(result).toBe("1");
+  });
+});
+
