@@ -28,7 +28,11 @@ describe("FizzBuzz string", () => {
     assertSequence(1, 3, "1, 2, Fizz");
   });
 
-  it('returns the correct string for 1 to 15', () => {
-    assertSequence(1, 15, "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz");
+  it("returns the correct string for 1 to 15", () => {
+    assertSequence(
+      1,
+      15,
+      "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz"
+    );
   });
 });
