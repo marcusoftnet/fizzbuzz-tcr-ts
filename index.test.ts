@@ -8,4 +8,5 @@ describe("FizzBuzz single number", () => {
 
   it('returns "1" for 1', () => assertSingle(1, "1"));
   it('returns "2" for 2', () => assertSingle(2, "2"));
+  it('returns "3" for Fizz', () => assertSingle(3, "Fizz"));
 });
