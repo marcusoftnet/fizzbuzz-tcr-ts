@@ -16,14 +16,16 @@ describe("FizzBuzz single number", () => {
 });
 
 describe("FizzBuzz string", () => {
+  const assertSequence = (start: number, end: number, expected: string) => {
+    expect(sequence(start, end)).toBe(expected);
+  };
+
   it('returns "1" for 1 to 1', () => {
-    const result = sequence(1, 1);
-    expect(result).toBe("1");
+    assertSequence(1, 1, "1");
   });
 
   it('returns "1, 2, Fizz" for 1 to 3', () => {
-    const result = sequence(1, 3);
-    expect(result).toBe("1, 2, Fizz");
+        assertSequence(1, 3, "1, 2, Fizz");
+
   });
 });
-
