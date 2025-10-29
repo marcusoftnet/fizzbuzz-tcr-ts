@@ -8,13 +8,8 @@ export const single = (n: number): string => {
 const isFizz = (n: number): boolean => n % 3 === 0;
 const isBuzz = (n: number): boolean => n % 5 === 0;
 
-const range = (start: number, end: number): number[] => {
-  const arr: number[] = [];
-  for (let i = start; i <= end; i++) {
-    arr.push(i);
-  }
-  return arr;
-}
+const range = (start: number, end: number): number[] =>
+  Array.from({ length: end - start + 1 }, (_, i) => start + i)
 
 export const sequence = (start: number, end: number): string => {
   const arr = range(start, end);
